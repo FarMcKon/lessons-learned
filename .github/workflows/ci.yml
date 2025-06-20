@@ -25,6 +25,5 @@ jobs:
           path: .cache 
           restore-keys: |
             mkdocs-material-
-      - run: echo "docs_dir=/home/runner/work/lessons-learned/lessons-learned/" >> $GITHUB_ENV
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
